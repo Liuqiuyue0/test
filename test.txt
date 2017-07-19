@@ -1,0 +1,62 @@
+C:\Users\liuqiuyue\AppData\Local\MyEclipse for Spring 2014
+
+创建一个数据库 powerdesigner
+
+setOnClickLi和setOnChangClickLi、
+
+notifyItemChanged
+
+1.公共的东西抽出来
+2.变化的东西有掉入者传入
+3.提供简洁的API
+
+
+泛型
+
+animator点击动画
+
+   Intent intent=new Intent(getActivity(), WareListActivity.class);
+                //将ID添加到intent
+                intent.putExtra(Contants.CAMPAIGN_ID,campaign.getId());
+                   //一定要start
+                startActivity(intent);
+
+
+
+ WebSettings settings=
+
+
+WebViewClient
+
+
+  //图片
+            Picasso.with(getContext()).load(user.getLogo_url()).into(mImg);
+
+
+Iterator
+
+
+
+
+新建一个modul(library) 复制src lib res 等内容  关联app与library   复制asset到app下
+
+查询文件
+adb shell
+cd /data/data/
+ls
+cd 包名
+cd shared_profs   //查看缓存
+cat 包.cml
+
+
+
+sdk mob
+
+1、运行输入 adb shell (前提是模拟器正在运行)
+2、进入命令界面后 输入 ls 指令 会列出文件的目录
+3、cd 进入你想要的目录里
+4、一层一层进去后会发现 databases目录 你的数据文件就在这个目录下放着
+5、sqlite3 test  (test就是你创建的数据库的名称 注意：不要加.db 后缀)
+6、现在你就进入你创建的test数据库了使用  .tables 就可以查看所有的表了； 
+
+数据要有时间，历史数据，登录注册
